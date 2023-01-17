@@ -7,7 +7,7 @@
     - name: acess a variable
       ansible.builtin.debug:
         msg: URL == {{URL}}
----
+
 - name: declsre variable at play level
   hosts: all
   connection: local
