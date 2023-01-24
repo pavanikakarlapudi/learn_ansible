@@ -9,7 +9,7 @@
         msg: URL == {{URL}}
 - name: access a variable in anoter file
   hosts: all
-  connecton: local
+  connection: local
   tasks:
     vars_file:
       - var.yml
