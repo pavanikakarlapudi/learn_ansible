@@ -6,15 +6,17 @@
   tasks:
     - name: acess a variable
       ansible.builtin.debug:
-        msg: URL == {{URL}}
+        msg: URL == {{URL}
+
+
 - name: access a variable in anoter file
   hosts: all
   connection: local
-  tasks:
-    vars_file:
+  vars_file:
       - var.yml
-- name: declare and access a variable
-  ansible.builtin.debug:
+  tasks:
+   - name: declare and access a variable
+     ansible.builtin.debug:
         msg: URL == {{URL}}
 
 - name: declare variable at task level
