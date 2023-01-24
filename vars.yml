@@ -9,7 +9,7 @@
         msg: URL == {{URL}
 
 
-- name: access a variable in anoter file
+- name: declare a variable in another file
   hosts: all
   connection: local
   vars_file:
