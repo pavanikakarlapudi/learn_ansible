@@ -1,4 +1,4 @@
-- name: Read a value from parameter store
+- name: read a value from parameter store
   hosts: localhost
   connection: local
   tasks:
